@@ -22,8 +22,12 @@ console.log(perimeterOfRectangle(width,length));
 let weight =70
 let height = 174
 
-let BMI = (weight,height)=>(weight/(((height/100)*(height/100))));
-console.log(BMI(weight,height));
+function bodyMassIndex (weight,height){
+   return  (weight/((height/100)*(height/100)))
+};
+console.log(bodyMassIndex(weight,height));
+
+let BMI = bodyMassIndex(weight,height);
 
 if(BMI<18.5){
     console.log("Underweight")}
