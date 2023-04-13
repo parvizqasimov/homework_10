@@ -41,8 +41,21 @@ else {
     console.log("Obese")
 };
 
-
-
+function findMax (numberArray){
+    let max = numberArray[0];
+    for( let i=0;i< numberArray.length;i++){
+        if(numberArray[i]> max){
+            max = numberArray[i]
+        }
+    }
+    return max;
+}
+ let numberArray = [0,10,5];
+ let max= findMax(numberArray);
+ console.log(max);
+ numberArray = [0,-10,-2];
+ max= findMax(numberArray);
+ console.log(max);
 
 
 
