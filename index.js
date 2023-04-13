@@ -58,6 +58,19 @@ function findMax (numberArray){
  console.log(max);
 
 
+ function pow (a,b){
+    let result = 1;
+    for ( i=0; i<b;i++){
+        result =a * result;
+    }
+    return result;
+ }
+ let a =3;
+ let b =4;
+ let result = pow(a,b);
+ console.log (result);
+
+
 
 
 
